@@ -1,0 +1,21 @@
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{profile.nickname}} 's profile</h3>
+  </div>
+  <div class="panel-body">
+    <div class="media">
+      <div class="pull-left">
+        <img class="media-object" src={{profile.picture}} alt="Image">
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">{{profile.nickname}} 's profile</h4>
+        <ul>
+          <li>Email         : {{profile.email}}</li>
+          <li>Created At    : {{profile.created_at | date : 'shortDate'}}</li>
+          <li>Username      : {{profile.nickname}}</li>
+          <li>Last Updated  : {{profile.updated_at | date : 'medium'}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
